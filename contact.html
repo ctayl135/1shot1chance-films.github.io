@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projectfinal.css">
+    <title>Contact - 1Shot1Chance Films</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="1s1c.jpeg" alt="Photography Logo" style="width: 150px; height: auto;">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="terms.html">Terms</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h1>Contact Us</h1>
+        <p>Have questions or want to book a session? Reach out to us!</p>
+        <form id="contactForm" action="submit_form.php" method="post" onsubmit="return handleFormSubmission();">
+            <form action="#" method="post" onSubmit="alert('Thank you for submitting your form,Welcome to 1Shot1Chance Films!')">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <script src="script.js"></script>
+    </section>
+
+    <footer>
+        <p>&#169; 2023 1Shot1Chance Films. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
